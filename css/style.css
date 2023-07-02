@@ -161,10 +161,6 @@ address {
   font-style: normal;
 }
 
-.contacts-item {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .contacts-list {
   display: flex;
   gap: 40px;
@@ -175,6 +171,7 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-text);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-link:hover,
@@ -228,6 +225,7 @@ address {
   background-color: var(--color-web);
   cursor: pointer;
   background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-button:hover,
@@ -411,6 +409,8 @@ address {
   border: 1px solid #8e8f99;
   border-radius: 4px;
   color: #8e8f99;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customer-link:hover,
@@ -421,11 +421,6 @@ address {
 
 .customer-icon {
   fill: currentColor;
-}
-
-.customer-img {
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 footer {
@@ -489,8 +484,8 @@ footer {
   line-height: 1.5;
   letter-spacing: 0.02em;
   width: 264px;
-  margin-left: 40px;
   margin-bottom: 16px;
+  margin-left: 40px;
   color: #ffffff;
 }
 
